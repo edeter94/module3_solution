@@ -1,0 +1,103 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  font-family: Georgia, Helvetica, Cursive;
+}
+h1 {
+  
+  background-color: cyan;
+  margin-bottom: 15px;
+  width:50%;
+  text-align:center;
+  margin-left:25%;
+
+}
+
+.sectiontitle{
+  margin-left: 65%;
+  border-bottom:1px solid black;
+  border-left:1px solid black;
+ /*margin-top: 0px;*/
+
+}
+h2{
+
+  text-align: center;
+  margin-top:0px;
+}
+
+.padding{
+  padding:10px;
+  text-align: center;
+}
+.bckgrnd{
+  background-color: #ff1144;
+}
+
+.chicken{
+  background-color: orange ;
+}
+
+.beef{
+  background-color: maroon ;
+}
+
+.fish{
+  background-color: grey;
+}
+
+/********** Styles for media queries **********/
+.row{
+  
+  width:100%;
+}
+
+
+
+
+@media (min-width: 992px){
+  .desktop{
+    float:left;
+    
+    margin-left: 2%;
+    margin-bottom:20px;
+   border: 1px solid black;
+    width:30%;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+  .tablet_fr, .tablet_sr{
+    float:left;
+    margin-bottom:20px;
+   
+  
+    border: 1px solid black;
+ }
+ .tablet_fr{
+  margin-left:1%;
+  margin-right:1%;
+  width: 48%;
+ }
+ .tablet_sr{
+  margin-left:1%;
+
+  width: 98%;
+ }
+
+}
+
+@media (max-width: 767px){
+  .phone{
+    margin-bottom:20px;
+  
+      float:left;
+      margin-left:1%;
+      margin-right:1%;
+      border: 1px solid black;
+      width: 98%;
+      
+   }
+}
+
