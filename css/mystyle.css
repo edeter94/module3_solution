@@ -1,103 +1,134 @@
-/********** Base styles **********/
+
+
+/********** Base styles *********/
 * {
-  box-sizing: border-box;
+  box-sizing: border-box; 
   font-family: Georgia, Helvetica, Cursive;
-}
-h1 {
-  
-  background-color: cyan;
-  margin-bottom: 15px;
-  width:50%;
-  text-align:center;
-  margin-left:25%;
-
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
 }
 
-.sectiontitle{
-  margin-left: 65%;
-  border-bottom:1px solid black;
-  border-left:1px solid black;
- /*margin-top: 0px;*/
-
-}
-h2{
-
-  text-align: center;
-  margin-top:0px;
-}
-
-.padding{
-  padding:10px;
-  text-align: center;
-}
-.bckgrnd{
-  background-color: #ff1144;
-}
-
-.chicken{
-  background-color: orange ;
-}
-
-.beef{
-  background-color: maroon ;
-}
-
-.fish{
-  background-color: grey;
-}
-
-/********** Styles for media queries **********/
 .row{
+  width: 100%;
   
-  width:100%;
-}
-
-
-
-
-@media (min-width: 992px){
-  .desktop{
-    float:left;
-    
-    margin-left: 2%;
-    margin-bottom:20px;
-   border: 1px solid black;
-    width:30%;
-  }
 
 }
 
-@media (min-width: 768px) and (max-width: 991px){
-  .tablet_fr, .tablet_sr{
-    float:left;
-    margin-bottom:20px;
-   
+/********** Body styles **********/
+body{
+  background-color:grey;
+  color:#fff;
+  margin:0;
+}
+h3 {
+  color:white;
+}
+
+/********** End of body  styles **********/
+
+/********** Header styles **********/
+
+#header-nav{
+
+background-color:#ff56af;
+border-radius:0;
+border:0;
+}
+
+
+/*.container{
+  margin: 15px;
+}
+
+.container-fluid{
+
+  margin:15px;
+}
+*/
+.navbar-brand{
+  padding-top:10px;
   
-    border: 1px solid black;
- }
- .tablet_fr{
-  margin-left:1%;
-  margin-right:1%;
-  width: 48%;
- }
- .tablet_sr{
-  margin-left:1%;
-
-  width: 98%;
- }
+  height: 70px;
 
 }
 
-@media (max-width: 767px){
-  .phone{
-    margin-bottom:20px;
-  
-      float:left;
-      margin-left:1%;
-      margin-right:1%;
-      border: 1px solid black;
-      width: 98%;
-      
-   }
+
+
+.navbar-header  div{
+  margin-left:0;
 }
+
+
+.navbar-brand h1{
+  margin-top:0;
+  color: #0056ff;
+  font-size: 3em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow:5px 5px 5px #224;
+  margin-top:0;
+  margin-bottom:0;
+  margin-left:0;
+  line-height: 0.9;
+
+}
+
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+.navbar-header button.navbar-toggle  {
+  border: 1px solid #61122f;
+}
+
+.navbar-header button.navbar-toggle {
+  clear:both;
+  margin-top: -30px;
+
+
+}
+
+
+
+nav span{
+  font-size: 1.5em;
+  font-style: bold;
+}
+/********** End of Header styles *********/
+
+/********** Main Page styles *********/
+
+
+.menuitem {
+  top: 0;
+  background-color:#121212;
+  margin:15px 15px 15px ;
+  padding : 15px;
+  border: 3px solid #000;
+
+}
+.menuitem p{
+  color: white;
+}
+
+
+
+.backlink a{
+  background-color:red;
+  color: yellow;
+  font-size: 1.6em;
+  color: yellow;
+}
+
+
+
+
+.backlink a:hover{
+  text-decoration: none;
+}
+
+/********** End OF Main Page styles *********/
+
 
